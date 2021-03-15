@@ -5,17 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>This is my header Icon Nav bar</header>
+    <header>
+      <div id="logo-div">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Amc_theatres_logo.svg/1200px-Amc_theatres_logo.svg.png"
+          id="logo"
+        />
+        <h3>Join AMC Stubs</h3>
+      </div>
+      <nav>
+        <a href="#">See A Movie</a>
+        <a href="#">Our Theaters</a>
+        <a href="#">Food & Drinks</a>
+        <a href="#">On Demand</a>
+        <a href="#">Extras</a>
+        <a href="#">Gift Cards</a>
+      </nav>
+      <div id="search-div">
+        <h4>Showtimes</h4>
+      </div>
+    </header>
     <main>
-      My image slider will go here.
-      <section>
-        <h1>Movies at AMC</h1>
-        Filter Movies
+      <section class="auto-slider">
+        <div id="slider">
+          <figure>
+            <img src="https://www.placecage.com/750/300" alt="Image" />
+            <img src="https://placekitten.com/750/300" alt="Image" />
+            <img src="https://www.placecage.com/750/300" alt="Image" />
+            <img src="https://placekitten.com/750/300" alt="Image" />
+            <img src="https://www.placecage.com/750/300" alt="Image" />
+          </figure>
+          <div class="indicator"></div>
+        </div>
+      </section>
+      <section id="movies-at-amc">
+          <div id="movies-at-amc-title">
+            <h1>Movies at AMC</h1>
+            Filter Movies
+          </div>
+
         <hr />
-        Display Five Featured Movies
+        <div>
+            Display Five Featured Movies
+        </div>
+        
       </section>
 
       <section>

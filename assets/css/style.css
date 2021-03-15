@@ -1,0 +1,102 @@
+/* Universal Selector */
+* {
+  font-family: gordita, Helvetica, sans-serif;
+}
+/* Element Selectors */
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  padding: 20px 10px;
+}
+/* Class Selectors */
+.auto-slider {
+  position: relative;
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 10px 10px 20px;
+  background: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+/* Id Selectors */
+
+#logo-div {
+  display: flex;
+}
+
+#logo {
+  height: 3em;
+}
+
+div#slider {
+  overflow: hidden;
+}
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s sliding ease infinite;
+}
+
+@keyframes sliding {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+#movies-at-amc {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(158, 158, 158, 0.30015756302521013) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+  display: flex;
+
+}
+
+#movies-at-amc-title {
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 0 auto;
+}
